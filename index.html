@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+  <title>Toshin B. Azad — Full-Stack Engineer & UI/UX Architect</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet"/>
+
+  <!-- Core CSS Blueprint -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- GSAP Animation Engine via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- CUSTOM PREMIUM CURSOR (Auto-hidden on Mobile) -->
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+
+  <!-- AMBIENT CANVAS OVERLAY -->
+  <canvas id="glow-canvas"></canvas>
+
+  <div id="app">
+
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+      <a href="#" class="nav-brand">Toshin B. Azad<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-grid">
+        <!-- Headline -->
+        <div class="hero-left">
+          <h1 class="hero-headline">
+            <span class="hl-line"><span class="hl-inner">Crafting</span></span>
+            <span class="hl-line"><span class="hl-inner hl-outline">Digital</span></span>
+            <span class="hl-line">
+              <span class="hl-inner">
+                <span class="swap-wrap"><span class="swap-word" id="swap-word">Experiences</span></span>
+              </span>
+            </span>
+          </h1>
+        </div>
+
+        <!-- Professional Context / Bio -->
+        <div class="hero-right" id="hero-right">
+          <h3 class="hero-greeting">Hi, I'm Toshin.</h3>
+          <p class="hero-bio">
+            I am a <em>Full-Stack Developer</em> and <strong>Technical Solutions Specialist</strong> who builds high-performance digital infrastructure from the ground up. My expertise spans the entire lifecycle of technology — from custom <em>MERN-stack platforms</em> to premium web development, Wordpress website, and AI workflow integration.
+          </p>
+          <blockquote class="hero-tagline">
+            I don't just build websites. I engineer complete digital solutions that are modern, highly secure, and optimised for business success.
+          </blockquote>
+          <p class="hero-conclusion">Let's build something exceptional together.</p>
+        </div>
+      </div>
+
+      <div class="hero-actions" id="hero-actions">
+        <a href="#services" class="btn-primary">
+          <span>View Services</span><span>→</span>
+        </a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+        <a href="https://drive.google.com/file/d/1YbpUmKuO1B5lQpUJlmiNjUzRLmQVHhgE/view?usp=sharing" target="_blank" class="btn-secondary" style="opacity:0.6; border-style:dashed;">Download CV</a>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-hint-line"></div>
+        Scroll
+      </div>
+    </section>
+
+    <!-- LOOPING MARQUEE TICKER 01 -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="m-item hi">Available for Work<span class="m-dot"></span></span>
+        <span class="m-item">UI/UX Design<span class="m-dot"></span></span>
+        <span class="m-item">Full-Stack Dev<span class="m-dot"></span></span>
+        <span class="m-item">MERN Stack<span class="m-dot"></span></span>
+        <span class="m-item">WordPress<span class="m-dot"></span></span>
+        <span class="m-item">Software Architecture<span class="m-dot"></span></span>
+        <span class="m-item">Design Systems<span class="m-dot"></span></span>
+        <span class="m-item hi">React &amp; Next.js<span class="m-dot"></span></span>
+        <span class="m-item hi">Available for Work<span class="m-dot"></span></span>
+        <span class="m-item">UI/UX Design<span class="m-dot"></span></span>
+        <span class="m-item">Full-Stack Dev<span class="m-dot"></span></span>
+        <span class="m-item">MERN Stack<span class="m-dot"></span></span>
+        <span class="m-item">WordPress<span class="m-dot"></span></span>
+        <span class="m-item">Software Architecture<span class="m-dot"></span></span>
+        <span class="m-item">Design Systems<span class="m-dot"></span></span>
+        <span class="m-item hi">React &amp; Next.js<span class="m-dot"></span></span>
+      </div>
+    </div>
+
+    <!-- METRICS / STATS VALUE METERS -->
+    <div class="stats-bar">
+      <div class="stat-item reveal">
+        <div class="stat-num">3<span class="stat-sup">+</span></div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item reveal reveal-d1">
+        <div class="stat-num">20<span class="stat-sup">+</span></div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-item reveal reveal-d2">
+        <div class="stat-num">100<span class="stat-sup">%</span></div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+      <div class="stat-item reveal reveal-d3">
+        <div class="stat-num">5<span class="stat-sup">★</span></div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+    </div>
+
+    <!-- SERVICES ACCORDION -->
+    <section class="section-pad acc-section" id="services">
+      <div class="s-eyebrow reveal">What I Do</div>
+      <h2 class="s-heading reveal reveal-d1">SERVICES<span class="dim">.</span></h2>
+      <div class="acc-list" id="services-list">
+
+        <div class="acc-item" data-acc>
+          <div class="acc-bar"></div>
+          <div class="acc-header">
+            <span class="acc-num">01/</span>
+            <span class="acc-title">UI / UX Design</span>
+            <span class="acc-tag">Design</span>
+          </div>
+          <div class="acc-icon">+</div>
+          <div class="acc-body"><div class="acc-body-inner"><div class="acc-body-content">
+            I craft <em>precision-driven user interfaces</em> that balance aesthetic clarity with conversion-focused architecture. From wireframes to high-fidelity Figma prototypes, every pixel is intentional — built for <em>real human flows</em> and premium brand identity. Expertise spans design systems, component libraries, mobile-first layouts, and micro-interaction design.
+          </div></div></div>
+        </div>
+
+        <div class="acc-item" data-acc>
+          <div class="acc-bar"></div>
+          <div class="acc-header">
+            <span class="acc-num">02/</span>
+            <span class="acc-title">Full-Stack Development</span>
+            <span class="acc-tag">Engineering</span>
+          </div>
+          <div class="acc-icon">+</div>
+          <div class="acc-body"><div class="acc-body-inner"><div class="acc-body-content">
+            End-to-end engineering across the <em>MERN stack</em> (MongoDB, Express, React, Node.js), delivering performant, scalable web applications. I architect clean RESTful APIs, optimise database schemas, and implement <em>CI/CD pipelines</em> — ensuring your product ships fast and scales without friction.
+          </div></div></div>
+        </div>
+
+        <div class="acc-item" data-acc>
+          <div class="acc-bar"></div>
+          <div class="acc-header">
+            <span class="acc-num">03/</span>
+            <span class="acc-title">WordPress Development</span>
+            <span class="acc-tag">CMS</span>
+          </div>
+          <div class="acc-icon">+</div>
+          <div class="acc-body"><div class="acc-body-inner"><div class="acc-body-content">
+            Custom <em>WordPress theme and plugin development</em> built for real editorial and commercial needs — not templates. From Gutenberg block engineering to WooCommerce customisation and headless WordPress via REST or GraphQL, I deliver <em>fast, maintainable CMS architectures</em> your team can actually manage.
+          </div></div></div>
+        </div>
+
+        <div class="acc-item" data-acc>
+          <div class="acc-bar"></div>
+          <div class="acc-header">
+            <span class="acc-num">04/</span>
+            <span class="acc-title">Software Architecture</span>
+            <span class="acc-tag">Systems</span>
+          </div>
+          <div class="acc-icon">+</div>
+          <div class="acc-body"><div class="acc-body-inner"><div class="acc-body-content">
+            Strategic <em>system design and technical leadership</em> for startups and growing agencies. I map application architecture, define technology stacks, establish code standards, and build structural foundations that let engineering teams move fast without breaking things. From <em>microservices planning</em> to monolith-to-modular migrations.
+          </div></div></div>
+        </div>
+
+        <div class="acc-item" data-acc>
+          <div class="acc-bar"></div>
+          <div class="acc-header">
+            <span class="acc-num">05/</span>
+            <span class="acc-title">Conversion Optimisation</span>
+            <span class="acc-tag">Growth</span>
+          </div>
+          <div class="acc-icon">+</div>
+          <div class="acc-body"><div class="acc-body-inner"><div class="acc-body-content">
+            Data-driven UX audits and <em>conversion rate engineering</em> — identifying friction, redesigning critical flows, and A/B testing hypotheses that directly impact revenue. Combining heatmap analysis, user session review, and <em>iterative UI prototyping</em> to transform good products into great ones.
+          </div></div></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REVERSE MARQUEE TICKER 02 -->
+    <div class="marquee-wrap rev">
+      <div class="marquee-track">
+        <span class="m-item">Figma<span class="m-dot"></span></span>
+        <span class="m-item hi">React<span class="m-dot"></span></span>
+        <span class="m-item">Node.js<span class="m-dot"></span></span>
+        <span class="m-item">MongoDB<span class="m-dot"></span></span>
+        <span class="m-item hi">Next.js<span class="m-dot"></span></span>
+        <span class="m-item">TypeScript<span class="m-dot"></span></span>
+        <span class="m-item">Tailwind CSS<span class="m-dot"></span></span>
+        <span class="m-item hi">WordPress<span class="m-dot"></span></span>
+        <span class="m-item">Figma<span class="m-dot"></span></span>
+        <span class="m-item hi">React<span class="m-dot"></span></span>
+        <span class="m-item">Node.js<span class="m-dot"></span></span>
+        <span class="m-item">MongoDB<span class="m-dot"></span></span>
+        <span class="m-item hi">Next.js<span class="m-dot"></span></span>
+        <span class="m-item">TypeScript<span class="m-dot"></span></span>
+        <span class="m-item">Tailwind CSS<span class="m-dot"></span></span>
+        <span class="m-item hi">WordPress<span class="m-dot"></span></span>
+      </div>
+    </div>
+
+    <!-- CAREER TIMELINE -->
+    <section class="section-pad" id="experience">
+      <div class="s-eyebrow reveal">Career</div>
+      <h2 class="s-heading reveal reveal-d1">EXPERIENCE<span class="dim">.</span></h2>
+
+      <div class="exp-grid">
+        <div class="exp-l reveal">
+          <div class="exp-period">2025 — Present</div>
+          <div class="exp-company">DigiWiz</div>
+        </div>
+        <div class="exp-r reveal reveal-d1">
+          <div class="exp-role">Chief Technology Manager</div>
+          <p class="exp-desc">
+            Led end-to-end software architecture across a full-service digital agency — defining the technical vision, engineering the <em>MERN-stack infrastructure</em>, and managing cross-functional development teams. Responsibilities spanned system design, sprint planning, code quality governance, and direct client technical consultancy — scaling the agency's delivery capacity while maintaining high-grade output standards across all product verticals.
+          </p>
+          <div class="exp-chips">
+            <span class="chip">MERN Stack</span>
+            <span class="chip">System Design</span>
+            <span class="chip">Technical Leadership</span>
+            <span class="chip">Client Consultancy</span>
+            <span class="chip">Team Management</span>
+          </div>
+        </div>
+
+        <div class="exp-l reveal">
+          <div class="exp-period">2022 — 2025</div>
+          <div class="exp-company">Dawat IT &amp; Consultancy</div>
+        </div>
+        <div class="exp-r reveal reveal-d1">
+          <div class="exp-role">Project Manager</div>
+          <p class="exp-desc">
+            Joined as a <em>Technical Intern</em> and earned rapid promotions to <em>Junior Executive</em> within three months, ultimately advancing to <em>Project Manager</em> to spearhead lifecycle engineering delivery. Owned the end-to-end execution of cross-functional digital products, translating loose business definitions into concrete technical scoping, system architecture wireframes, and database requirements.<br><br>
+            Managed software sprints using <em>Agile / Scrum methodologies</em>, orchestrating daily standups, mitigating dependency bottlenecks, and bridge-linking engineering teams with enterprise stakeholders. Established repeatable Git integration workflows, automated QA testing milestones, and structured client-onboarding frameworks that minimised codebase regression failures, accelerated feature deployment velocity, and substantially elevated client satisfaction scores.
+          </p>
+          <div class="exp-chips">
+            <span class="chip">Agile / Scrum</span>
+            <span class="chip">Sprint Management</span>
+            <span class="chip">QA Engineering</span>
+            <span class="chip">Stakeholder Relations</span>
+            <span class="chip">Git Workflows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIAL VIEWPORT CAROUSEL -->
+    <section class="section-pad" id="testimonials" style="background:var(--bg-2);">
+      <div class="s-eyebrow reveal">Social Proof</div>
+      <h2 class="s-heading reveal reveal-d1">CLIENT TESTIMONIALS<span class="dim">.</span></h2>
+
+      <div class="testi-viewport" id="testi-vp">
+        <!-- Slide 1 -->
+        <div class="testi-slide active" data-slide>
+          <p class="testi-quote">
+            Toshin did an outstanding job upgrading the Pacific Academy website. He completely retouched the design for a modern look, built essential new pages, and successfully fixed our WordPress security vulnerabilities. He delivered exactly what we needed — both high-quality design and a secure backend. Highly recommended!
+          </p>
+          <div class="testi-meta">
+            <div class="testi-avatar">IH</div>
+            <div>
+              <div class="testi-author">Md. Imran Hossain</div>
+              <div class="testi-role">Executive Director, Pacific Academy</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testi-slide" data-slide>
+          <p class="testi-quote">
+            Toshin built our land business website entirely from scratch, and the results are outstanding. A clean, modern, and highly professional platform that showcases our properties and projects perfectly. His work is top-tier, efficient, and highly detailed. If you need an agency-grade website built right from the ground up, Toshin is the developer to trust.
+          </p>
+          <div class="testi-meta">
+            <div class="testi-avatar">MH</div>
+            <div>
+              <div class="testi-author">Mosharraf Hossain Bhuiyan</div>
+              <div class="testi-role">Vice Chairman, Mars Constech LTD</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="testi-slide" data-slide>
+          <p class="testi-quote">
+            Toshin did a fantastic job creating our corporate real estate website. He developed a highly professional, modern platform that beautifully presents our building projects and property listings. The navigation is seamless, and the design perfectly aligns with our corporate brand.
+          </p>
+          <div class="testi-meta">
+            <div class="testi-avatar">MR</div>
+            <div>
+              <div class="testi-author">Muhammad Azizur Rahman</div>
+              <div class="testi-role">Director, Pacific Constech LTD</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="testi-slide" data-slide>
+          <p class="testi-quote">
+            His WordPress builds are nothing like the generic themes you see everywhere. Custom-engineered, fast, and maintainable. Our editorial team actually enjoys using the CMS now.
+          </p>
+          <div class="testi-meta">
+            <div class="testi-avatar">PM</div>
+            <div>
+              <div class="testi-author">Priya M.</div>
+              <div class="testi-role">Editor-in-Chief, Digital Media Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-controls">
+        <div id="testi-dots"></div>
+        <div class="testi-arrows">
+          <button class="testi-btn" id="testi-prev">←</button>
+          <button class="testi-btn" id="testi-next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAD GENERATION / CONTACT -->
+    <div class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div class="s-eyebrow reveal">Let's Talk</div>
+        <h2 class="contact-heading reveal reveal-d1">
+          LET'S BUILD<br>
+          <span class="ch-hollow">SOMETHING</span>
+          <span class="ch-sky">REMARKABLE.</span>
+        </h2>
+        <p class="contact-sub reveal reveal-d2">
+          Have a project in mind? Looking for a design partner who codes? Let's talk about turning your vision into a precision-crafted digital product.
+        </p>
+        <div class="contact-row reveal reveal-d3">
+          <a href="mailto:contact.toshin@gmail.com" class="btn-primary">
+            <span>START A PROJECT</span><span>→</span>
+          </a>
+          <a href="mailto:contact.toshin@gmail.com" class="contact-email">contact.toshin@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <span class="footer-brand">Toshin B. Azad<span class="dot">.</span></span>
+      <div class="footer-links">
+        
+        <a href="https://discord.com/users/924523962417958943" target="_blank">Discord</a>
+        <a href="https://linkedin.com/in/toshinxdev" target="_blank">LinkedIn</a>
+        <a href="https://github.com/NotToshin" target="_blank">GitHub</a>
+        <a href="http://wa.me/8801798112763" target="_blank">Whatsapp</a>
+      </div>
+      <span class="footer-copy">© 2026 — All Rights Reserved</span>
+    </footer>
+
+  </div><!-- /#app -->
+
+  <script src="script.js"></script>
+</body>
+</html>
