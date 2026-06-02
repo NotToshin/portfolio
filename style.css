@@ -201,7 +201,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: 1fr 440px;
   align-items: end;
-  gap: 100px;
+  gap: 50px;
 }
 
 /* headline */
