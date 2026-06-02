@@ -166,7 +166,7 @@ nav.scrolled {
 .hero {
   min-height: 100vh;
   display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 0 64px 108px;
+  padding: 0 64px 130px;
   position: relative;
   background:
     radial-gradient(ellipse 60% 50% at 80% 20%, rgba(14,165,233,0.06) 0%, transparent 70%),
@@ -201,7 +201,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: 1fr 440px;
   align-items: end;
-  gap: 50px;
+  gap: 100px;
 }
 
 /* headline */
